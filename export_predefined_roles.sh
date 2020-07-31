@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+#set -x
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@ set -x
 
 tempdir=/tmp
 
-printf "Exporting predefined roles can take some time since there are over 500+\n"
+printf "Exporting predefined roles can take some time since there are over 500+ roles (10-15 minutes)\n"
 
 for x in $(gcloud iam roles list --format 'value(name)')
 do
