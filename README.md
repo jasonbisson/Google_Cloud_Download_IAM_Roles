@@ -24,8 +24,9 @@ $ export_predefined_roles.sh
 ### Run the export and load into Big Query for Analysis 
 ```
 $ load_predefined_roles_into_bq.sh
+```
 
-## External Documentation
+### External Documentation
 
 [Understanding IAM roles](https://cloud.google.com/iam/docs/understanding-roles)
 
