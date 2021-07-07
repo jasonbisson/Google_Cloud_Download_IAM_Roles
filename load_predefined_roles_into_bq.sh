@@ -53,7 +53,7 @@ function load_data () {
     bq load --project_id=${project_id} --source_format=NEWLINE_DELIMITED_JSON --autodetect --replace --time_partitioning_type=DAY ${dataset}.${table} gs://${bucket}/*.ndjson
 }
 
-#download_predefined_roles
+download_predefined_roles
 create_bucket
 create_dataset
 upload_local_files
