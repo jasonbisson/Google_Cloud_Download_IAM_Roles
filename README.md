@@ -26,6 +26,11 @@ $ export_predefined_roles.sh
 $ load_predefined_roles_into_bq.sh
 ```
 
+### IAM Deny permission list 
+```
+ curl -s https://cloud.google.com/iam/docs/deny-permissions-support#supported-permissions |grep googleapis.com |sed 's/<code translate="no" dir="ltr">\([^<]*\)<\/code>/\1/g' |sed 1,6d |sed '$d'
+```
+
 ### External Documentation
 
 [Understanding IAM roles](https://cloud.google.com/iam/docs/understanding-roles)
